@@ -1,4 +1,4 @@
-# HG: https://huggingface.co/froggeric/Qwen3.6-27B-MTP-GGUF
+# HF: https://huggingface.co/froggeric/Qwen3.6-27B-MTP-GGUF
 # ----- BENCH START -----
 # Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #1 TPS: 3.6468675728675555
 # Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #2 TPS: 3.655271919860364

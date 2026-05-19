@@ -1,4 +1,4 @@
-# HG: https://huggingface.co/unsloth/Qwen3.5-4B-MTP-GGUF
+# HF: https://huggingface.co/unsloth/Qwen3.5-4B-MTP-GGUF
 # ----- BENCH START -----
 # Qwen3.5-4B-Q6_K.gguf Pass #1 TPS: 58.34602825683306
 # Qwen3.5-4B-Q6_K.gguf Pass #2 TPS: 58.46626064842515
