@@ -1,11 +1,12 @@
 # HG: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
-# Runs:
-# n_decoded =   3513, tg =  20.22 t/s
-# n_decoded =   3203, tg =  19.92 t/s
-# n_decoded =   3257, tg =  19.87 t/s
-# n_decoded =   3260, tg =  19.88 t/s
-# n_decoded =   3253, tg =  19.86 t/s
-# avg: 19.95
+# ----- BENCH START -----
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #1 TPS: 20.945220942412483
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #2 TPS: 20.713391286816417
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #3 TPS: 20.591491081098013
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #4 TPS: 20.59837401585112
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #5 TPS: 20.622407147596178
+# AVERAGE TPS: 20.69417689475484220000
+# ----- BENCH DONE -----
 # TODO: check --spec-draft-ngl all
 services:
   local-ai:
