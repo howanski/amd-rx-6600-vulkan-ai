@@ -1,0 +1,26 @@
+services:
+  local-ai:
+    # new releases page:
+    # https://github.com/ggml-org/llama.cpp/pkgs/container/llama.cpp/versions?filters%5Bversion_type%5D=tagged
+    image: ghcr.io/ggml-org/llama.cpp:server-vulkan-b9209
+    container_name: local-ai
+    ports:
+      - "8080:8080"
+    volumes:
+      # Mount the directory containing your GGUF model files (example for my directory structure on spinning rust in NAS)
+      - /home/howanski/MOUNTS/HOT_STORAGE/PUBLIC_RO/LM_STUDIO_MODELS/:/models:ro
+    command: >
+      --TODO COPY PRESET FILE TO 'compose.override.yml'
+    restart: no
+    devices:
+      # This is how we can use vulkan
+      - "/dev/dri/renderD128:/dev/dri/renderD128"
+    deploy:
+      resources:
+        limits:
+          memory: 50g
+    logging:
+      driver: json-file
+      options:
+          max-size: "5m"
+          max-file: "2"
