@@ -13,7 +13,7 @@ You can copy-paste example compose.yml file and point mounts on your models dire
 
 |file|model|tps|context|
 |-|-|-|-|
-|[qwen36_27b_q4_mtp_coding](qwen36_27b_q4_mtp_coding.yml)|[Qwen 3.6 27B Q4KM](https://huggingface.co/froggeric/Qwen3.6-27B-MTP-GGUF)|~ 3.38|150k|
+|[qwen36_27b_q4_mtp_coding](qwen36_27b_q4_mtp_coding.yml)|[Qwen 3.6 27B Q4KM](https://huggingface.co/froggeric/Qwen3.6-27B-MTP-GGUF)|~ 3.40|150k|
 
 
 
