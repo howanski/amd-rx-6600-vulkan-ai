@@ -1,0 +1,37 @@
+# HG: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
+# Runs:
+# n_decoded =   3513, tg =  20.22 t/s
+# n_decoded =   3203, tg =  19.92 t/s
+# n_decoded =   3257, tg =  19.87 t/s
+# n_decoded =   3260, tg =  19.88 t/s
+# n_decoded =   3253, tg =  19.86 t/s
+# avg: 19.95
+# TODO: check --spec-draft-ngl all
+services:
+  local-ai:
+    command: >
+      --batch-size 1024
+      --cache-type-k q8_0
+      --cache-type-v q8_0
+      --cpu-moe
+      --ctx-size 150000
+      --flash-attn on
+      --host 0.0.0.0
+      --min-p 0.0
+      --model /models/unsloth/Qwen3.6-35B-A3B-MTP-GGUF/Qwen3.6-35B-A3B-UD-Q6_K.gguf
+      --n_gpu_layers 99
+      --no-mmap
+      --no-mmproj
+      --parallel 1
+      --port 8080
+      --presence-penalty 0.0
+      --repeat-penalty 1.0
+      --seed 42
+      --spec-draft-cpu-moe
+      --spec-draft-n-max 3
+      --spec-type draft-mtp
+      --temperature 0.6
+      --threads 4
+      --top-k 20
+      --top-p 0.95
+      --ubatch-size 1024
