@@ -9,6 +9,8 @@ AMD Ryzen 5 5600 (6C/12T, 32MB L3 Cache, 3MB L2 Cache, no iGPU)
 
 You can copy-paste example compose.yml file and point mounts on your models directory (my directory structure is done by LM Studio)
 
+Then rename preset file to `compose.override.yml` so it sets parameters for container while you run `docker compose up`
+
 ------
 Benchmark results for attached presets (from BENCHMARK_RUN.sh):
 
@@ -16,6 +18,7 @@ Benchmark results for attached presets (from BENCHMARK_RUN.sh):
 |file|model|tps|context|
 |-|-|-|-|
 |[gemma4_26b_q6](gemma4_26b_q6.yml)|[Gemma 4 26B A4B Q6K](https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-uncensored-heretic-GGUF)|15.34|200k|
+|[gemma4_31b_q6](gemma4_31b_q6.yml)|[Gemma 4 31B Q6K](https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic-GGUF)|TODO (+- 1.5)|200k|
 |[qwen35_4b_q6_mtp_coding](qwen35_4b_q6_mtp_coding.yml)|[Qwen 3.5 4B Q6K](https://huggingface.co/unsloth/Qwen3.5-4B-MTP-GGUF)|58.34|150k|
 |[qwen35_9b_q6_mtp_coding](qwen35_9b_q6_mtp_coding.yml)|[Qwen 3.5 9B Q6K](https://huggingface.co/unsloth/Qwen3.5-9B-MTP-GGUF)|19.58|150k|
 |[qwen36_27b_q4_mtp_coding](qwen36_27b_q4_mtp_coding.yml)|[Qwen 3.6 27B Q4KM](https://huggingface.co/froggeric/Qwen3.6-27B-MTP-GGUF)|3.65|150k|
