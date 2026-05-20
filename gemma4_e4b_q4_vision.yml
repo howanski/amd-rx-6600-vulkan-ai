@@ -1,0 +1,36 @@
+# HF: https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
+# ----- BENCH START -----
+# Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf Pass #1 TPS: 52.2844618045771
+# Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf Pass #2 TPS: 52.3325182976683
+# Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf Pass #3 TPS: 52.31681609991327
+# Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf Pass #4 TPS: 52.31117259330661
+# Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf Pass #5 TPS: 52.31557120276449
+# AVERAGE TPS: 52.31210799964595400000
+# ----- BENCH DONE -----
+services:
+  local-ai:
+    command: >
+      --batch-size 2048
+      --cpu-moe
+      --ctx-size 128000
+      --flash-attn on
+      --host 0.0.0.0
+      --image-max-tokens 1120
+      --image-min-tokens 1120
+      --min-p 0.05
+      --mmproj /models/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive/mmproj-Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-f16.gguf
+      --model /models/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf
+      --n_gpu_layers 99
+      --no-mmap
+      --parallel 1
+      --port 8080
+      --presence-penalty 0.0
+      --repeat-penalty 1.1
+      --seed 42
+      --temp 1.0
+      --threads 4
+      --top-k 64
+      --top-p 0.95
+      --ubatch-size 2048
+
+# https://dev.to/someoddcodeguy/a-quick-note-on-gemma-4-image-settings-in-llamacpp-39ng
