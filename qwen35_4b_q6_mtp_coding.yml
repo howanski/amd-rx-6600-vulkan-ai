@@ -1,11 +1,11 @@
 # HF: https://huggingface.co/unsloth/Qwen3.5-4B-MTP-GGUF
 # ----- BENCH START -----
-# Qwen3.5-4B-Q6_K.gguf Pass #1 TPS: 58.34602825683306
-# Qwen3.5-4B-Q6_K.gguf Pass #2 TPS: 58.46626064842515
-# Qwen3.5-4B-Q6_K.gguf Pass #3 TPS: 58.338910826234816
-# Qwen3.5-4B-Q6_K.gguf Pass #4 TPS: 58.310039271412066
-# Qwen3.5-4B-Q6_K.gguf Pass #5 TPS: 58.25530381195461
-# AVERAGE TPS: 58.34330856297194040000
+# Qwen3.5-4B-Q6_K.gguf Pass #1 TPS: 63.549108352656035
+# Qwen3.5-4B-Q6_K.gguf Pass #2 TPS: 63.78693995543928
+# Qwen3.5-4B-Q6_K.gguf Pass #3 TPS: 63.72540969929341
+# Qwen3.5-4B-Q6_K.gguf Pass #4 TPS: 63.750159574121376
+# Qwen3.5-4B-Q6_K.gguf Pass #5 TPS: 63.73223940626346
+# AVERAGE TPS: 63.70877139755471220000
 # ----- BENCH DONE -----
 services:
   local-ai:
@@ -25,7 +25,7 @@ services:
       --port 8080
       --presence-penalty 0.0
       --seed 42
-      --spec-draft-n-max 3
+      --spec-draft-n-max 2
       --spec-draft-ngl all
       --spec-type draft-mtp
       --temp 0.6
