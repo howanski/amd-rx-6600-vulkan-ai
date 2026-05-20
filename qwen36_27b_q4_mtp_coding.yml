@@ -1,13 +1,12 @@
 # HF: https://huggingface.co/froggeric/Qwen3.6-27B-MTP-GGUF
 # ----- BENCH START -----
-# Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #1 TPS: 3.6468675728675555
-# Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #2 TPS: 3.655271919860364
-# Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #3 TPS: 3.654115280801241
-# Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #4 TPS: 3.654903769672942
-# Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #5 TPS: 3.6429681872939286
-# AVERAGE TPS: 3.65082534609920622000
+# Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #1 TPS: 3.7567496660800708
+# Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #2 TPS: 3.7561355202232463
+# Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #3 TPS: 3.7569736642649465
+# Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #4 TPS: 3.7423415916433167
+# Qwen3.6-27B-Q4_K_M-mtp.gguf Pass #5 TPS: 3.7575294272118236
+# AVERAGE TPS: 3.75394597388468078000
 # ----- BENCH DONE -----
-# TODO: try spec-draft-n-max 2 and 4
 services:
   local-ai:
     command: >
@@ -25,7 +24,7 @@ services:
       --port 8080
       --presence-penalty 0.0
       --seed 42
-      --spec-draft-n-max 3
+      --spec-draft-n-max 2
       --spec-draft-ngl all
       --spec-type draft-mtp
       --temp 0.6
