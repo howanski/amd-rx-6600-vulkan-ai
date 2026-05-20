@@ -1,11 +1,11 @@
 # HF: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
 # ----- BENCH START -----
-# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #1 TPS: 20.945220942412483
-# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #2 TPS: 20.713391286816417
-# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #3 TPS: 20.591491081098013
-# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #4 TPS: 20.59837401585112
-# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #5 TPS: 20.622407147596178
-# AVERAGE TPS: 20.69417689475484220000
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #1 TPS: 21.159458973913043
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #2 TPS: 21.144845488760357
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #3 TPS: 21.1084937797896
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #4 TPS: 21.153247823061903
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #5 TPS: 21.1344099181049
+# AVERAGE TPS: 21.14009119672596060000
 # ----- BENCH DONE -----
 # TODO: check --spec-draft-ngl all
 services:
@@ -29,7 +29,7 @@ services:
       --repeat-penalty 1.0
       --seed 42
       --spec-draft-cpu-moe
-      --spec-draft-n-max 3
+      --spec-draft-n-max 2
       --spec-type draft-mtp
       --temp 0.6
       --threads 4
