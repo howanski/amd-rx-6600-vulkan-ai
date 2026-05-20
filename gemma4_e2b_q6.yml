@@ -1,0 +1,30 @@
+# HF https://huggingface.co/HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive
+# ----- BENCH START -----
+# Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-Q6_K_P.gguf Pass #1 TPS: 77.66226316415288
+# Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-Q6_K_P.gguf Pass #2 TPS: 77.62732908223605
+# Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-Q6_K_P.gguf Pass #3 TPS: 77.62195244310095
+# Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-Q6_K_P.gguf Pass #4 TPS: 78.16740261846513
+# Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-Q6_K_P.gguf Pass #5 TPS: 77.79055143396616
+# AVERAGE TPS: 77.77389974838423400000
+# ----- BENCH DONE -----
+services:
+  local-ai:
+    command: >
+      --cpu-moe
+      --ctx-size 200000
+      --flash-attn on
+      --host 0.0.0.0
+      --min-p 0.05
+      --mmproj /models/HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive/mmproj-Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-f16.gguf
+      --model /models/HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-Q6_K_P.gguf
+      --n_gpu_layers 99
+      --no-mmap
+      --no-mmproj
+      --parallel 1
+      --port 8080
+      --presence-penalty 0.0
+      --repeat-penalty 1.1
+      --temp 1.0
+      --threads 4
+      --top-k 64
+      --top-p 0.95
