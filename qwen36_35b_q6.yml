@@ -1,0 +1,31 @@
+# HF: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Wasserstein-GGUF
+# ----- BENCH START -----
+# Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf Pass #1 TPS: 17.60289967962587
+# Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf Pass #2 TPS: 17.627800332020975
+# Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf Pass #3 TPS: 17.60445818549143
+# Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf Pass #4 TPS: 17.62511451918159
+# Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf Pass #5 TPS: 17.619018195932618
+# AVERAGE TPS: 17.61585818245049660000
+# ----- BENCH DONE -----
+# TODO: same release as q4 - do I need this? do I need q4 at all? uncensored but without mtp...
+services:
+  local-ai:
+    command: >
+      --cpu-moe
+      --ctx-size 200000
+      --flash-attn on
+      --host 0.0.0.0
+      --min-p 0.0
+      --model /models/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Wasserstein-GGUF/Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf
+      --n_gpu_layers 99
+      --no-mmap
+      --no-mmproj
+      --parallel 1
+      --port 8080
+      --presence-penalty 1.5
+      --repeat-penalty 1.0
+      --seed 42
+      --temp 0.7
+      --threads 4
+      --top-k 20
+      --top-p 0.8
