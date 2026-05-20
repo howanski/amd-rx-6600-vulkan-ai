@@ -1,13 +1,12 @@
 # HF: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
 # ----- BENCH START -----
-# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #1 TPS: 21.159458973913043
-# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #2 TPS: 21.144845488760357
-# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #3 TPS: 21.1084937797896
-# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #4 TPS: 21.153247823061903
-# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #5 TPS: 21.1344099181049
-# AVERAGE TPS: 21.14009119672596060000
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #1 TPS: 21.217956851345157
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #2 TPS: 21.195064327163927
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #3 TPS: 21.217641257022063
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #4 TPS: 21.21891885134497
+# Qwen3.6-35B-A3B-UD-Q6_K.gguf Pass #5 TPS: 21.224899655509564
+# AVERAGE TPS: 21.21489618847713620000
 # ----- BENCH DONE -----
-# TODO: check --spec-draft-ngl all
 services:
   local-ai:
     command: >
@@ -21,6 +20,7 @@ services:
       --min-p 0.0
       --model /models/unsloth/Qwen3.6-35B-A3B-MTP-GGUF/Qwen3.6-35B-A3B-UD-Q6_K.gguf
       --n_gpu_layers 99
+      --spec-draft-ngl all
       --no-mmap
       --no-mmproj
       --parallel 1
