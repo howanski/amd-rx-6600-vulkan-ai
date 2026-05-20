@@ -1,13 +1,12 @@
-# HF: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Wasserstein-GGUF
+# HF: https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-GGUF
 # ----- BENCH START -----
-# Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf Pass #1 TPS: 17.219986091421926
-# Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf Pass #2 TPS: 17.230101710999318
-# Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf Pass #3 TPS: 17.096382330574468
-# Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf Pass #4 TPS: 17.187011147515612
-# Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf Pass #5 TPS: 17.155520582131672
-# AVERAGE TPS: 17.17780037252859920000
+# Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-Q6_K.gguf Pass #1 TPS: 20.550235426610403
+# Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-Q6_K.gguf Pass #2 TPS: 20.562503217464638
+# Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-Q6_K.gguf Pass #3 TPS: 20.56369886684558
+# Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-Q6_K.gguf Pass #4 TPS: 20.560249231194845
+# Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-Q6_K.gguf Pass #5 TPS: 20.52989313694857
+# AVERAGE TPS: 20.55331597581280720000
 # ----- BENCH DONE -----
-# TODO: Move to https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-GGUF
 services:
   local-ai:
     command: >
@@ -19,7 +18,7 @@ services:
       --flash-attn on
       --host 0.0.0.0
       --min-p 0.0
-      --model /models/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Wasserstein-GGUF/Qwen3.6-35B-A3B-Uncensored.Q6_K_P.gguf
+      --model /models/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-GGUF/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-Q6_K.gguf
       --n_gpu_layers 99
       --no-mmap
       --no-mmproj
@@ -28,7 +27,10 @@ services:
       --presence-penalty 1.5
       --repeat-penalty 1.0
       --seed 42
-      --spec-type none
+      --spec-draft-cpu-moe
+      --spec-draft-n-max 2
+      --spec-draft-ngl all
+      --spec-type draft-mtp
       --temp 1.0
       --threads 4
       --top-k 20

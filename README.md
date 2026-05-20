@@ -31,4 +31,4 @@ Benchmark results for attached presets (from BENCHMARK_RUN.sh):
 |[qwen36_35b_q6_general](qwen36_35b_q6_general.yml)|[Qwen 3.6 35B A3B Q6K](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF)|19.71|150k|
 |[qwen36_35b_q6_instruct_general](qwen36_35b_q6_instruct_general.yml)|[Qwen 3.6 35B A3B Q6K](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF)|21.58|150k|
 |[qwen36_35b_q6_instruct_reason](qwen36_35b_q6_instruct_reason.yml)|[Qwen 3.6 35B A3B Q6K](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF)|20.18|150k|
-|[qwen36_35b_q6_uncensored](qwen36_35b_q6_uncensored.yml)|[Qwen 3.6 35B A3B Q6KP](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Wasserstein-GGUF)|17.18|200k|
+|[qwen36_35b_q6_uncensored](qwen36_35b_q6_uncensored.yml)|[Qwen 3.6 35B A3B Q6KP](https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-GGUF)|20.55|200k|
