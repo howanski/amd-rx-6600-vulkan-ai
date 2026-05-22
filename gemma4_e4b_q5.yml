@@ -1,0 +1,31 @@
+# HF: https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF
+# ----- BENCH START -----
+# gemma-4-E4B-it-Q5_K_M.gguf Pass #1 TPS: 48.15556881125378
+# gemma-4-E4B-it-Q5_K_M.gguf Pass #2 TPS: 48.145026314154315
+# gemma-4-E4B-it-Q5_K_M.gguf Pass #3 TPS: 48.14851303657708
+# gemma-4-E4B-it-Q5_K_M.gguf Pass #4 TPS: 48.147679770059696
+# gemma-4-E4B-it-Q5_K_M.gguf Pass #5 TPS: 48.14358648048712
+# AVERAGE TPS: 48.14807488250639820000
+# ----- BENCH DONE -----
+# TODO: MTP, cache quality
+services:
+  local-ai:
+    command: >
+      --cpu-moe
+      --ctx-size 128000
+      --flash-attn on
+      --host 0.0.0.0
+      --min-p 0.05
+      --model /models/unsloth/gemma-4-E4B-it-GGUF/gemma-4-E4B-it-Q5_K_M.gguf
+      --n_gpu_layers 99
+      --no-mmap
+      --no-mmproj
+      --parallel 1
+      --port 8080
+      --presence-penalty 0.0
+      --repeat-penalty 1.1
+      --seed 42
+      --temp 1.0
+      --threads 4
+      --top-k 64
+      --top-p 0.95

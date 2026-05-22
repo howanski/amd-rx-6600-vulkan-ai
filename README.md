@@ -22,6 +22,8 @@ Benchmark results for attached presets (from BENCHMARK_RUN.sh):
 |[gemma4_31b_q6_uncensored](gemma4_31b_q6_uncensored.yml)|[Gemma 4 31B Q6K](https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic-GGUF)|TODO (+- 1.5)|200k|
 |[gemma4_e2b_q6_uncensored](gemma4_e2b_q6_uncensored.yml)|[Gemma 4 E2B Q6K](https://huggingface.co/HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive)|77.77|200k|
 |[gemma4_e4b_q4_vision](gemma4_e4b_q4_vision.yml)|[Gemma 4 E4B Q4KM](https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive)|52.31|128k|
+|[gemma4_e4b_q5_vision](gemma4_e4b_q5_vision.yml)|[Gemma 4 E4B Q5KM](https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF)|47.03|128k|
+|[gemma4_e4b_q5](gemma4_e4b_q5.yml)|[Gemma 4 E4B Q5KM](https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF)|48.15|128k|
 |[gemma4_e4b_q6_uncensored_pruned](gemma4_e4b_q6_uncensored_pruned.yml)|[Gemma 4 E4B Q6K](https://huggingface.co/Handyfff/Gemma-4-E4B-it-uncensored-pruned-TextOnly-EnglishOnly-GGUF)|42.60|200k|
 |[qwen35_2b_q6_coding](qwen35_2b_q6_coding.yml)|[Qwen 3.5 2B Q6K](https://huggingface.co/unsloth/Qwen3.5-2B-MTP-GGUF)|99.33|150k|
 |[qwen35_4b_q6_coding](qwen35_4b_q6_coding.yml)|[Qwen 3.5 4B Q6K](https://huggingface.co/unsloth/Qwen3.5-4B-MTP-GGUF)|63.71|150k|
