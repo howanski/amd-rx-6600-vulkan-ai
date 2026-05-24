@@ -25,6 +25,7 @@ Benchmark results for attached presets (from BENCHMARK_RUN.sh):
 |[gemma4_e4b_q5_vision](gemma4_e4b_q5_vision.yml)|[Gemma 4 E4B Q5KM](https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF)|47.03|128k|
 |[gemma4_e4b_q5](gemma4_e4b_q5.yml)|[Gemma 4 E4B Q5KM](https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF)|48.15|128k|
 |[gemma4_e4b_q6_uncensored_pruned](gemma4_e4b_q6_uncensored_pruned.yml)|[Gemma 4 E4B Q6K](https://huggingface.co/Handyfff/Gemma-4-E4B-it-uncensored-pruned-TextOnly-EnglishOnly-GGUF)|42.60|128k|
+|[lfm25_vl_450m_vision](lfm25_vl_450m_vision.yml)|[LFM 2.5-VL 450M Q8](https://huggingface.co/LiquidAI/LFM2.5-VL-450M-GGUF)|393.16|128k|
 |[qwen35_2b_q6_coding](qwen35_2b_q6_coding.yml)|[Qwen 3.5 2B Q6K](https://huggingface.co/unsloth/Qwen3.5-2B-MTP-GGUF)|99.33|150k|
 |[qwen35_4b_q6_coding](qwen35_4b_q6_coding.yml)|[Qwen 3.5 4B Q6K](https://huggingface.co/unsloth/Qwen3.5-4B-MTP-GGUF)|63.71|150k|
 |[qwen35_9b_q6_coding](qwen35_9b_q6_coding.yml)|[Qwen 3.5 9B Q6K](https://huggingface.co/unsloth/Qwen3.5-9B-MTP-GGUF)|21.17|150k|
