@@ -1,5 +1,12 @@
 # HF: https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic-GGUF
-# TODO BENCHMARK
+# ----- BENCH START -----
+# gemma-4-31B-it-uncensored-heretic-Q6_K.gguf Pass #1 TPS: 1.5747737964486943
+# gemma-4-31B-it-uncensored-heretic-Q6_K.gguf Pass #2 TPS: 1.5385463196174418
+# gemma-4-31B-it-uncensored-heretic-Q6_K.gguf Pass #3 TPS: 1.5330897283344196
+# gemma-4-31B-it-uncensored-heretic-Q6_K.gguf Pass #4 TPS: 1.5426204760604492
+# gemma-4-31B-it-uncensored-heretic-Q6_K.gguf Pass #5 TPS: 1.5679603604491053
+# AVERAGE TPS: 1.55139813618202204000
+# ----- BENCH DONE -----
 # TODO gpu layers ? +waiting for MTP implementation
 services:
   local-ai:

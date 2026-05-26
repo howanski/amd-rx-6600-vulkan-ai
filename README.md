@@ -19,7 +19,7 @@ Benchmark results for attached presets (from BENCHMARK_RUN.sh):
 |file|model|tps|context|
 |-|-|-|-|
 |[gemma4_26b_q6_uncensored](gemma4_26b_q6_uncensored.yml)|[Gemma 4 26B A4B Q6K](https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-uncensored-heretic-GGUF)|15.34|200k|
-|[gemma4_31b_q6_uncensored](gemma4_31b_q6_uncensored.yml)|[Gemma 4 31B Q6K](https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic-GGUF)|TODO (+- 1.5)|200k|
+|[gemma4_31b_q6_uncensored](gemma4_31b_q6_uncensored.yml)|[Gemma 4 31B Q6K](https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic-GGUF)|1.55|200k|
 |[gemma4_e2b_q6_uncensored](gemma4_e2b_q6_uncensored.yml)|[Gemma 4 E2B Q6K](https://huggingface.co/HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive)|77.77|200k|
 |[gemma4_e4b_q4_vision](gemma4_e4b_q4_vision.yml)|[Gemma 4 E4B Q4KM](https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive)|52.31|128k|
 |[gemma4_e4b_q5_vision](gemma4_e4b_q5_vision.yml)|[Gemma 4 E4B Q5KM](https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF)|47.03|128k|
