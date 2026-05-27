@@ -12,6 +12,7 @@ services:
     command: >
       --cpu-moe
       --ctx-size 200000
+      --chat-template-kwargs '{"enable_thinking":true}'
       --flash-attn on
       --host 0.0.0.0
       --min-p 0.05

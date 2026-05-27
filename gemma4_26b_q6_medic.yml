@@ -1,16 +1,17 @@
 # HF: https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-uncensored-heretic-GGUF
 # ----- BENCH START -----
-# gemma-4-26B-A4B-it-uncensored-heretic-Q6_K.gguf Pass #1 TPS: 15.348607828318022
-# gemma-4-26B-A4B-it-uncensored-heretic-Q6_K.gguf Pass #2 TPS: 15.353711430797043
-# gemma-4-26B-A4B-it-uncensored-heretic-Q6_K.gguf Pass #3 TPS: 15.355663250603085
-# gemma-4-26B-A4B-it-uncensored-heretic-Q6_K.gguf Pass #4 TPS: 15.349267879183888
-# gemma-4-26B-A4B-it-uncensored-heretic-Q6_K.gguf Pass #5 TPS: 15.31534259847492
-# AVERAGE TPS: 15.34451859747539160000
+# gemma-4-26B-A4B-it-uncensored-heretic-Q6_K.gguf Pass #1 TPS: 15.272514746530044
+# gemma-4-26B-A4B-it-uncensored-heretic-Q6_K.gguf Pass #2 TPS: 15.326099571181782
+# gemma-4-26B-A4B-it-uncensored-heretic-Q6_K.gguf Pass #3 TPS: 15.342700525544318
+# gemma-4-26B-A4B-it-uncensored-heretic-Q6_K.gguf Pass #4 TPS: 15.345175350028327
+# gemma-4-26B-A4B-it-uncensored-heretic-Q6_K.gguf Pass #5 TPS: 15.34524597252662
+# AVERAGE TPS: 15.32634723316221820000
 # ----- BENCH DONE -----
 #TODO: Cache resolution? waiting for mtp implementation
 services:
   local-ai:
     command: >
+      --chat-template-kwargs '{"enable_thinking":false}'
       --cpu-moe
       --ctx-size 200000
       --flash-attn on

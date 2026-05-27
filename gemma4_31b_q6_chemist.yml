@@ -13,6 +13,7 @@ services:
     command: >
       --cache-type-k q8_0
       --cache-type-v q8_0
+      --chat-template-kwargs '{"enable_thinking":true}'
       --cpu-moe
       --ctx-size 200000
       --flash-attn on
