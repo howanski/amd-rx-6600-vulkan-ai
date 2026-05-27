@@ -26,6 +26,7 @@ Benchmark results for attached presets (from BENCHMARK_RUN.sh):
 |[gemma4_e4b_q5](gemma4_e4b_q5.yml)|[Gemma 4 E4B Q5KM](https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF)|48.15|128k|
 |[gemma4_e4b_q6_uncensored_pruned](gemma4_e4b_q6_uncensored_pruned.yml)|[Gemma 4 E4B Q6K](https://huggingface.co/Handyfff/Gemma-4-E4B-it-uncensored-pruned-TextOnly-EnglishOnly-GGUF)|42.60|128k|
 |[lfm25_vl_450m_vision](lfm25_vl_450m_vision.yml)|[LFM 2.5-VL 450M Q8](https://huggingface.co/LiquidAI/LFM2.5-VL-450M-GGUF)|393.16|128k|
+|[nu_extract_3_q6_data_extraction](nu_extract_3_q6_data_extraction).yml|[NuExtract3 Q6K](https://huggingface.co/numind/NuExtract3-GGUF)|26.42|50k|
 |[qwen35_2b_q6_coding](qwen35_2b_q6_coding.yml)|[Qwen 3.5 2B Q6K](https://huggingface.co/unsloth/Qwen3.5-2B-MTP-GGUF)|99.33|150k|
 |[qwen35_4b_q6_coding](qwen35_4b_q6_coding.yml)|[Qwen 3.5 4B Q6K](https://huggingface.co/unsloth/Qwen3.5-4B-MTP-GGUF)|63.71|150k|
 |[qwen35_9b_q6_coding](qwen35_9b_q6_coding.yml)|[Qwen 3.5 9B Q6K](https://huggingface.co/unsloth/Qwen3.5-9B-MTP-GGUF)|21.17|150k|
@@ -35,4 +36,5 @@ Benchmark results for attached presets (from BENCHMARK_RUN.sh):
 |[qwen36_35b_q6_general](qwen36_35b_q6_general.yml)|[Qwen 3.6 35B A3B Q6K](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF)|19.71|150k|
 |[qwen36_35b_q6_instruct_general](qwen36_35b_q6_instruct_general.yml)|[Qwen 3.6 35B A3B Q6K](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF)|21.58|150k|
 |[qwen36_35b_q6_instruct_reason](qwen36_35b_q6_instruct_reason.yml)|[Qwen 3.6 35B A3B Q6K](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF)|20.18|150k|
-|[qwen36_35b_q6_uncensored](qwen36_35b_q6_uncensored.yml)|[Qwen 3.6 35B A3B Q6KP](https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-GGUF)|20.55|200k|
+|[qwen36_35b_q6_uncensored](qwen36_35b_q6_uncensored.yml)|[Qwen 3.6 35B A3B Q6K](https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-GGUF)|20.55|200k|
+|[tencent_hy_mt2_7b_q6_translator](tencent_hy_mt2_7b_q6_translator.yml)|[Hy MT2 7B Q6K](https://huggingface.co/tencent/Hy-MT2-7B-GGUF)|8.20|90k|

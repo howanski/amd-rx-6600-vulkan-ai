@@ -1,0 +1,24 @@
+# HF: https://huggingface.co/tencent/Hy-MT2-7B-GGUF
+# ----- BENCH START -----
+# HY-MT2-7B-Q6_K.gguf Pass #1 TPS: 8.146506382860487
+# HY-MT2-7B-Q6_K.gguf Pass #2 TPS: 8.203681792856058
+# HY-MT2-7B-Q6_K.gguf Pass #3 TPS: 8.166625209701193
+# HY-MT2-7B-Q6_K.gguf Pass #4 TPS: 8.337537669044817
+# HY-MT2-7B-Q6_K.gguf Pass #5 TPS: 8.157154574728931
+# AVERAGE TPS: 8.20230112583829720000
+# ----- BENCH DONE -----
+# TODO: 8 TPS is slow for longer texts, maybe it can be optimized
+services:
+  local-ai:
+    command: >
+      --ctx-size 90000
+      --flash-attn on
+      --host 0.0.0.0
+      --min-p 0.00
+      --model /models/tencent/Hy-MT2-7B-GGUF/HY-MT2-7B-Q6_K.gguf
+      --no-mmap
+      --no-mmproj
+      --parallel 1
+      --port 8080
+      --seed 42
+      --threads 4

@@ -2,7 +2,7 @@ services:
   local-ai:
     # new releases page:
     # https://github.com/ggml-org/llama.cpp/pkgs/container/llama.cpp/versions?filters%5Bversion_type%5D=tagged
-    image: ghcr.io/ggml-org/llama.cpp:server-vulkan-b9209
+    image: ghcr.io/ggml-org/llama.cpp:server-vulkan-b9354
     container_name: local-ai
     ports:
       - "8080:8080"

@@ -1,0 +1,25 @@
+# HF: https://huggingface.co/numind/NuExtract3-GGUF
+# ----- BENCH START -----
+# NuExtract3-Q6_K.gguf Pass #1 TPS: 26.36384750677283
+# NuExtract3-Q6_K.gguf Pass #2 TPS: 26.39926283020762
+# NuExtract3-Q6_K.gguf Pass #3 TPS: 26.428855679421112
+# NuExtract3-Q6_K.gguf Pass #4 TPS: 26.456760533543086
+# NuExtract3-Q6_K.gguf Pass #5 TPS: 26.441198406255577
+# AVERAGE TPS: 26.41798499124004500000
+# ----- BENCH DONE -----
+# TODO: adjust when more complex documents start having issues
+services:
+  local-ai:
+    command: >
+      --ctx-size 50000
+      --flash-attn on
+      --host 0.0.0.0
+      --image-min-tokens 1120
+      --min-p 0.00
+      --mmproj /models/numind/NuExtract3-GGUF/mmproj-NuExtract3-BF16.gguf
+      --model /models/numind/NuExtract3-GGUF/NuExtract3-Q6_K.gguf
+      --no-mmap
+      --parallel 1
+      --port 8080
+      --seed 42
+      --threads 4
